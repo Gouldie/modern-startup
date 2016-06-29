@@ -1,45 +1,110 @@
-/* styles.css */
+/* startup.css */
 
 html, body {
 	height: 100%;
 }
 
-#cover {
-	background: url('../images/rabbits2.jpg') center center no-repeat;
-	background-size: cover;
-	height: 100%;
-	text-align: center;
-	color: white;
-	display: flex;
-	align-items: center;
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	color: #6c6f73;
 }
 
-#caption-cover {
-	width: 100%;
+h1, h2, h3, h4, h5 {
+	color: #333;
+}
+
+h6 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.8rem;
+	letter-spacing: 0.1rem;
 }
 
 img {
 	max-width: 100%;
 }
 
-.section-content {
-	padding: 5rem 0;
+.blockquote {
+	font-size: 1.6rem;
+	color: #333;
+	border: none;
+	padding: 0;
 }
 
-#about {
-	background: url(../images/meadow.jpg) center center no-repeat;
+.blockquote-footer {
+	margin: 1rem 0 0;
+}
+
+#stage {
+	background: url(../images/desk.jpg), center center no-repeat;
 	background-size: cover;
+	color: white;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
-.about-text {
-	background: rgba(0,0,0,0.8);
-	color: white;
-	padding: 2rem;
+#stage-caption {
+	font-size: 1.4rem;
+	font-weight: 200;
+	max-width: 60rem;
+	margin: 0 auto;
+	text-align: center;
 }
 
-#footer-main {
-	background: #222;
+#stage-caption h1 {
 	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.feature-content {
+	padding: 8rem 0;
+	overflow: hidden;
+}
+
+.feature-dark {
+	background: #262f36;
+	color: white;
+}
+
+.feature-dark h2 {
+	color: white;
+}
+
+.feature-dark img {
+	padding-top: 1rem;
+}
+
+.feature-alt {
+	background: #f0f0f0;
+}
+
+#feature-five img {
+	margin-top: 2rem;
+}
+
+#main-footer {
+	background: #262F36;
+	color: white;
+	padding: 6rem 0;
 	font-size: 0.8rem;
-	padding: 2.5rem 0;
+}
+
+#main-footer h6 {
+	color: #718fa9;
+}
+
+#main-footer a {
+	color: #6c6c73;
+}
+
+/* media queries */
+
+@media screen and (min-width: 991px) {
+	.feature-content {
+		display: flex;
+		align-items: center;
+	}
 }
